@@ -1,0 +1,30 @@
+﻿name: task_manager_app
+description: A task management application
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  sqflite: ^2.3.0
+  path: ^1.9.0
+  flutter_local_notifications: ^17.0.0
+  intl: ^0.19.0
+  shared_preferences: ^2.2.2
+  provider: ^6.1.1
+  permission_handler: ^11.3.1  # For Android 13+ notification permission
+  file_picker: ^8.0.0           # For choosing export location
+  path_provider: ^2.1.3         # For file storage
+  csv: ^6.0.0                   # For CSV export
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
